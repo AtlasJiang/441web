@@ -1,0 +1,132 @@
+/* Atlas */  
+body {  
+    margin-bottom: 100px; /* Ensure adequate space is available for the footer */  
+}  
+  
+.nav-bar {    
+    background-color: #FFC0CB; /* 修改为粉色背景 */  
+    padding: 10px 0; /* Padding for the top and bottom of the navigation bar */    
+}    
+    
+.nav-bar ul {    
+    list-style-type: none;    
+    text-align: center;    
+}    
+    
+.nav-bar ul li {    
+    display: inline;    
+    margin: 0 20px;    
+}    
+   
+.footer {    
+    background-color: rgba(255, 192, 203, 0.8); /* 带有80%透明度的浅粉色页脚 */  
+    padding: 10px 0;    
+    text-align: center;    
+    position: fixed;    
+    width: 100%;    
+    bottom: 0;    
+}
+  
+/* Image Styles */  
+.image-section img,  
+.project img,  
+.image-section-about img,  
+.image-section-home img {  
+    display: block;  
+    margin: 0 auto; /* Center the images horizontally */  
+}  
+  
+/* Button Styles */  
+.course button,  
+.registration-form input[type="button"],  
+.registration-form input[type="submit"] {  
+    background-color: rgb(0, 255, 8);  
+    color: white;  
+    border: none;  
+    padding: 5px 10px;  
+    margin: 5px;  
+    cursor: pointer;  
+}  
+  
+/* Page-specific Styles */  
+.page-name,  
+.image-section,  
+.registration-form {  
+    text-align: center; /* Center aligning the content within these sections */  
+}  
+  
+/* Course Section Styles */  
+.course-section {  
+    /* styles.css */  
+  
+    .course-section {  
+  
+        /* If using a floating layout, make sure to clear the floating */  
+        overflow: auto; /* or use other methods to clear float */  
+      
+    }  
+      
+    .course {  
+      
+        margin-bottom: 20px; /* Add some vertical spacing for each course */  
+      
+        /* You can add other styles to beautify the course layout */  
+      
+    }  
+      
+    /* If you use a floating layout, ensure that the .course element is floating */  
+    .course {  
+      
+        float: left; /* or use other layout methods, such as flex */  
+      
+        width: 100%; /* If floating is not used, this attribute is not needed */  
+      
+    }  
+      
+    /* Clear the style of the floating button (if needed) */  
+    .remove-course {  
+      
+        clear: both; /* Ensure that the button does not float next to the course content */  
+      
+        display: block; /* Ensure that the button is displayed as a block level element */  
+      
+        margin-top: 10px; /* Add some top margins */  
+      
+    }  
+      
+    /* Other styles you need */
+}  
+  
+/* Project Section Styles */  
+/* Project Section Styles */  
+.project-section {    
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr); /* Define two columns */    
+    grid-gap: 10px; /* Spacing between items */    
+    align-items: start; /* Vertical alignment, can be adjusted based on need */    
+}    
+    
+.project:first-child {    
+    grid-row: 1 / span 1; /* The first item takes the first row */    
+    grid-column: 1 / span 2; /* And spans across both columns, forming the top of the pinwheel shape */    
+}    
+    
+.project:nth-child(2),    
+.project:nth-child(3) {    
+    grid-row: 2 / span 1; /* The second and third items take the second row */    
+}    
+    
+.project:nth-child(2) {    
+    grid-column: 1 / span 1; /* The second item takes the first column */    
+}    
+    
+.project:nth-child(3) {    
+    grid-column: 2 / span 1; /* The third item takes the second column */    
+}    
+    
+.project {    
+    border: 1px solid #b01428; /* Use a standard hex color value */    
+    padding: 10px;    
+    text-align: center;    
+    /* margin-bottom is no longer needed, as the Grid layout handles spacing automatically */    
+}
