@@ -1,89 +1,110 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>shop</title>  
-    <link rel="stylesheet" href="styles.css">  
-</head>  
-<script src="script.js" defer></script>  
-<body>  
-  
-<!-- Navigation bar -->  
-<nav class="nav-bar">  
-    <ul>  
-        <li><a href="index.html">Home</a></li>  
-        <li><a href="about.html">About Us</a></li>  
-        <li><a href="shop.html">shop</a></li>  
-        <li><a href="contact us.html">Register</a></li>  
-        <li><a href="projects.html">Projects</a></li>  
-        <!-- 假设Logout按钮是一个独立的功能，因此我会将其从ul列表中移出 -->  
-        <div class="logout-container">  
-            <button id="logoutButton">Logout</button>  
-        </div>  
-    </ul>  
-</nav>  
-  
-<!-- Page name -->  
-<div class="page-name">  
-    <h1>shop</h1>  
-</div>  
-  
-<!-- Course sections -->  
-<section class="course-section">  
-    <!-- Course 1 -->  
-    <div class="course">  
-        <h2>Course 1</h2>  
-        <p>Price: $20</p>  
-        <input type="text" placeholder="Enter quantity">  
-        <button>Add to Cart</button>  
-        <button class="remove-course">Remove </button>  
-    </div>  
-    <div class="course">  
-        <h2>Course 2</h2>  
-        <p>Price: $23</p>  
-        <input type="text" placeholder="Enter quantity">  
-        <button>Add to Cart</button>  
-        <button class="remove-course">Remove </button>  
-    </div>  
-    <div class="course">  
-        <h2>Course 3</h2>  
-        <p>Price: $40</p>  
-        <input type="text" placeholder="Enter quantity">  
-        <button>Add to Cart</button>  
-        <button class="remove-course">Remove </button>  
-    </div>  
-    <div class="course">  
-        <h2>Course 4</h2>  
-        <p>Price: $20</p>  
-        <input type="text" placeholder="Enter quantity">  
-        <button>Add to Cart</button>  
-        <button class="remove-course">Remove </button>  
-    </div>   
- 
-      
-    <!-- Course 5 -->  
-    <div class="course">  
-        <h2>Course 5</h2>  
-        <p>Price: $100</p>  
-        <input type="text" placeholder="Enter quantity">  
-        <button>Add to Cart</button>  
-        <button class="remove-course">Remove </button>  
-    </div>  
-</section>  
-  
-<!-- Total price section -->  
-<section class="total-price-section">  
-    <h2>Total Price for All Courses</h2>  
-    <!-- Total price for all courses will be displayed here -->  
-    <button class="clear-cart">Clear Cart</button>  
-    <button class="checkout">Checkout</button>  
-</section>  
-  
-<!-- Footer -->  
-<footer class="footer">  
-    <p>&copy; 2024 Atlas. </p>  
-</footer>  
-  
-</body>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .button {
+            background-color: #4CAF50; /* Green background */
+            border: none; /* Remove border */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding */
+            text-align: center; /* Centered text */
+            text-decoration: none; /* No underline */
+            display: inline-block; /* Inline-block display */
+            font-size: 16px; /* Font size */
+            margin: 4px 2px; /* Margin */
+            cursor: pointer; /* Hand cursor on hover */
+        }
+        .remove-course, .clear-cart, .checkout {
+            background-color: #f44336; /* Red background for remove and clear actions */
+        }
+        .cart-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<script src="script.js" defer></script>
+<body>
+
+<!-- Navigation bar -->
+<nav class="nav-bar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+    <div class="logout-container">
+        <button id="logoutButton" class="button">Logout</button>
+    </div>
+</nav>
+
+<!-- Page name -->
+<div class="page-name">
+    <h1>Shop</h1>
+</div>
+
+<!-- Course sections -->
+<section class="course-section">
+    <!-- Course 1 -->
+    <div class="course">
+        <h2>Certificate III in Business Administration and Management (BSB30415)</h2>
+        <p>Price: $15</p>
+        <input type="text" placeholder="Enter quantity">
+        <button class="button">Add to Cart</button>
+        <button class="remove-course button">Remove</button>
+    </div>
+    <div class="course">
+        <h2>Diploma of Information Technology (IT) Support (ICT50118)</h2>
+        <p>Price: $20</p>
+        <input type="text" placeholder="Enter quantity">
+        <button class="button">Add to Cart</button>
+        <button class="remove-course button">Remove</button>
+    </div>
+    <div class="course">
+        <h2>Advanced Diploma of Project Management (BSB60820)</h2>
+        <p>Price: $25</p>
+        <input type="text" placeholder="Enter quantity">
+        <button class="button">Add to Cart</button>
+        <button class="remove-course button">Remove</button>
+    </div>
+    <div class="course">
+        <h2>Certificate IV in Hospitality Management (SIT40416)</h2>
+        <p>Price: $30</p>
+        <input type="text" placeholder="Enter quantity">
+        <button class="button">Add to Cart</button>
+        <button class="remove-course button">Remove</button>
+    </div>
+    <div class="course">
+        <h2>Diploma of Graphic Design and Digital Media (CUA50720)</h2>
+        <p>Price: $35</p>
+        <input type="text" placeholder="Enter quantity">
+        <button class="button">Add to Cart</button>
+        <button class="remove-course button">Remove</button>
+    </div>
+</section>
+
+<!-- Total price section -->
+<section class="total-price-section">
+    <h2>Total Price for All Courses: $0</h2>
+    <button class="clear-cart button">Clear Cart</button>
+    <button class="checkout button">Checkout</button>
+</section>
+
+<!-- Cart items list -->
+<section class="cart-items-list">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Atlas.</p>
+</footer>
+
+</body>
 </html>
